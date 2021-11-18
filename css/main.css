@@ -70,22 +70,22 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #b22234;
+    border-bottom: 20px solid #4b6c6d;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #b22234;
+    border-top: 20px solid #4b6c6d;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #3c3b6e;
+    background: #4b6c6d;
 }
 
 .title {
-    color: white;
+    color: #222;
 }
 
 /* ==============
@@ -133,7 +133,7 @@ nav a:hover {
 }
 
 .main aside {
-    color: white;
+    color: #222;
     padding: 0px 5% 10px;
 }
 
