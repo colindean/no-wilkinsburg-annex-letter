@@ -138,7 +138,7 @@ nav a:hover {
 }
 
 .footer-container footer {
-    color: white;
+    color: #222;
     padding: 20px 0;
 }
 
@@ -387,7 +387,7 @@ header h1.title svg {
 }
 
 .footer-container a, aside a {
-  color: white;
+  color: #222;
 }
 
 input, textarea, select {
