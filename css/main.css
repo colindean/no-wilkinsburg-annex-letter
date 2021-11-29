@@ -460,3 +460,8 @@ input[type=checkbox] {
 tr.highlight {
     background-color: yellow;
 }
+
+pre.envelope {
+    background-color: #eee;
+    border: 1px dotted #bbb;
+}
