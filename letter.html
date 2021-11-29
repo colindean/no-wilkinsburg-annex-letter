@@ -58,7 +58,7 @@
               <div>
                 <label for="comments" class="comments">Is there anything else that your elected officials should know?</label>
                 <textarea name="comments"
-                  placeholder="Other thoughts, such as your taxes increasing, the services changing, less direct representation, etc."></textarea>
+                  placeholder="Other thoughts, such as lack of public support, unclear process, your taxes increasing, the services changing, less direct representation, etc."></textarea>
               </div>
               <div>
                 <label class="correct">Are the responses above correct?</label>
@@ -68,7 +68,7 @@
             </form>
             </ul>
             <h2>What do I do now?</h2>
-            <button onclick="window.print(); return false">Print your letter, previewed below.</button>
+            <button id="print" onclick="window.print(); return false">Print your letter, previewed below.</button>
             <p><small>...or just print this page. It'll just print the letter!</small></p>
             <p>
               Listed below are the addresses and fax numbers for each of the officials that could hear from you.
@@ -109,7 +109,129 @@
             </div>
           </section>
           <footer>
-            <h2>Thank you</h2>
+            <h2>Thank you for sending this</h2>
+
+            <h3>by mail</h3>
+
+            <h4>Pittsburgh city council</h4>
+            <p>
+              All Pittsburgh city council members share the same address:
+            </p>
+            <pre>
+              The Office of Councilmember FIRSTNAME LASTNAME
+              City-County Building
+              Suite 510
+              414 Grant Street
+              Pittsburgh, PA 15219
+            </pre>
+
+            <p>
+              Not sure how to address an envelope?
+              <a href="https://www.today.com/home/how-address-envelope-t156576" target="_new">Read this.</a>
+            </p>
+
+            <h4>by fax</h4>
+
+            <p>
+              You can send a fax
+              for free with a service such as
+              <a href="https://faxzero.com/" title="Send faxes for free">FaxZero</a>.
+              You'll need to print this page as a PDF.
+              Look around the print dialog that comes up when you click the <a href="#print">Print button</a>.
+              You can then attach the PDF to the fax.
+              Or, you can do it the old fashioned way if you have access to a fax machine or another way to send faxes!
+            </p>
+
+            <p>
+              Choose from the Pittsburgh city council members below.
+              You can send one copy to one, or, you can send a copy to everyone individually.
+              Can't decide which to send to?
+              <a id="randomly-select-district">Click here to have one chosen at random and highlighted for you.</a>
+            </p>
+
+            <table>
+              <thead>
+                <tr>
+                  <td>District</td>
+                  <td>Name</td>
+                  <td>Fax</td>
+                  <td>Phone</td>
+                  <td>Online</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="district">1</td>
+                  <td>Bobby Wilson</td>
+                  <td class="fax">412-255-2129</td>
+                  <td class="phone">412-255-2135</td>
+                  <td><a href="https://pittsburghpa.gov/council/district1/feedback.html">Feedback</a></td>
+                </tr>
+                <tr>
+                  <td class="district">2</td>
+                  <td>Theresa Kail-Smith</td>
+                  <td class="fax">412-255-2821</td>
+                  <td class="phone">412-255-8963</td>
+                  <td><a href="https://pittsburghpa.gov/council/district2/feedback.html">Feedback</a></td>
+                </tr>
+                <tr>
+                  <td class="district">3</td>
+                  <td>Bruce Kraus</td>
+                  <td class="fax">412-255-8950</td>
+                  <td class="phone">412-255-2130</td>
+                  <td><a href="https://pittsburghpa.gov/council/district3/feedback.html">Feedback</a></td>
+                </tr>
+                <tr>
+                  <td class="district">4</td>
+                  <td>Anthony Coghill</td>
+                  <td class="fax">412-255-2052</td>
+                  <td class="phone">412-255-2131</td>
+                  <td><a href="https://pittsburghpa.gov/council/district4/feedback.html">Feedback</a></td>
+                </tr>
+                <tr>
+                  <td class="district">5</td>
+                  <td>Corey O'Connor</td>
+                  <td class="fax">412-255-0820</td>
+                  <td class="phone">412-255-8965</td>
+                  <td><a href="https://pittsburghpa.gov/council/district5/feedback.html">Feedback</a></td>
+                </tr>
+                <tr>
+                  <td class="district">6/td>
+                  <td>R. Daniel Lavelle</td>
+                  <td class="fax">412-255-0737</td>
+                  <td class="phone">412-255-2134</td>
+                  <td><a href="https://pittsburghpa.gov/council/district6/feedback.html">Feedback</a></td>
+                </tr>
+                <tr>
+                  <td class="district">7</td>
+                  <td>Deb Gross</td>
+                  <td class="fax">412-255-2419</td>
+                  <td class="phone">412-255-2140</td>
+                  <td><a href="https://pittsburghpa.gov/council/district7/feedback.html">Feedback</a></td>
+                </tr>
+                <tr>
+                  <td class="district">8</td>
+                  <td>Erika Strassburger</td>
+                  <td class="fax">412-255-0738</td>
+                  <td class="phone">412-255-2133</td>
+                  <td><a href="https://pittsburghpa.gov/council/district8/feedback.html">Feedback</a></td>
+                </tr>
+                <tr>
+                  <td class="district">9</td>
+                  <td>Ricky Burgess</td>
+                  <td class="fax">412-255-8658</td>
+                  <td class="phone">412-255-2137</td>
+                  <td><a href="https://pittsburghpa.gov/council/district9/feedback.html">Feedback</a></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p>
+              Source:
+              <a href="https://pittsburghpa.gov/council/council-contacts"
+                >City Council Contacts on pittsburghpa.gov</a>
+              retrieved 2021-11-29</p>
+
           </footer>
         </article>
 
@@ -160,6 +282,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
+    <!--
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0HR1sUh4xiBllxQY20DSUezTsP0RxLOc&callback=geocodingAvailable">
     </script>
@@ -171,5 +294,6 @@
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','UA-1198224-10','auto');ga('send','pageview');
     </script>
+    -->
   </body>
 </html>
