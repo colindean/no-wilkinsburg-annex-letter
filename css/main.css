@@ -457,10 +457,6 @@ input[type=checkbox] {
     display: inline-block;
 }
 
-tr.highlight {
-    background-color: yellow;
-}
-
 pre.envelope {
     background-color: #eee;
     border: 1px dotted #bbb;
@@ -486,4 +482,8 @@ table.districts td {
 	border-style: solid;
 	border-color: #666666;
 	background-color: #ffffff;
+}
+
+tr.highlight {
+    background-color: yellow !important;
 }
