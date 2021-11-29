@@ -129,7 +129,7 @@ window.addEventListener('load', function(event) {
     parent.className = "highlight";
 
     // set their name in the letter for a quick personalization
-    var councilName = parent.childNodes[1].innerText;
+    var councilName = parent.getElementsByClassName('name')[0].innerText;
     setOfficialName(councilName);
   });
 });
