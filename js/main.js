@@ -127,6 +127,7 @@ function geocodingAvailable(){
 
 window.addEventListener('load', function(event) {
   this.document.getElementById('randomly-select-district').addEventListener('click', function(event){
+    event.preventDefault();
     var districts = document.getElementsByClassName('district');
     // clear classes from all TRs
     Array.from(districts).map(function(dist){
