@@ -129,7 +129,7 @@ window.addEventListener('load', function(event) {
     districtRow.className = "highlight";
 
     // set their name in the letter for a quick personalization
-    var councilName = districtRow.getElementsByClassName('name')[0].innerText;
+    var councilName = districtRow.getElementsByClassName('repname')[0].innerText;
     setOfficialName(councilName);
   });
 });
