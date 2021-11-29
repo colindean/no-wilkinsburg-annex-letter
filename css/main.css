@@ -450,3 +450,9 @@ background-color: #cecece;
 .comments {
 background-color: #eeeeee;
 }
+
+/* without this, the checkbox and the label end up on different lines */
+input[type=checkbox] {
+    width: 2em;
+    display: inline-block;
+}
