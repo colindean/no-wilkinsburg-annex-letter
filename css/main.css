@@ -464,6 +464,7 @@ tr.highlight {
 pre.envelope {
     background-color: #eee;
     border: 1px dotted #bbb;
+    padding: 1em;
 }
 
 table.districts {
