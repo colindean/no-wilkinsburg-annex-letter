@@ -125,11 +125,11 @@ window.addEventListener('load', function(event) {
     });
     var choice = Math.floor(Math.random() * districts.length);
     var chosen = districts[choice];
-    var parent = chosen.parentElement;
-    parent.className = "highlight";
+    var districtRow = chosen.parentElement;
+    districtRow.className = "highlight";
 
     // set their name in the letter for a quick personalization
-    var councilName = parent.getElementsByClassName('name')[0].innerText;
+    var councilName = districtRow.getElementsByClassName('name')[0].innerText;
     setOfficialName(councilName);
   });
 });
