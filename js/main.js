@@ -110,6 +110,11 @@ function geocodingAvailable(){
   });
 }
 
+function setOfficialName(name){
+  var letterNameField = document.getElementById('official-name');
+  letterNameField.innerText = "Councilmember " + name;
+}
+
 window.addEventListener('load', function(event) {
   this.document.getElementById('randomly-select-district').addEventListener('click', function(event){
     event.preventDefault();
@@ -122,5 +127,9 @@ window.addEventListener('load', function(event) {
     var chosen = districts[choice];
     var parent = chosen.parentElement;
     parent.className = "highlight";
+
+    // set their name in the letter for a quick personalization
+    var councilName = parent.childNodes[1].innerText;
+    setOfficialName(councilName);
   });
 });
