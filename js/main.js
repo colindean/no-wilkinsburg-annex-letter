@@ -124,3 +124,17 @@ function geocodingAvailable(){
     });
   });
 }
+
+window.addEventListener('load', function(event) {
+  this.document.getElementById('randomly-select-district').addEventListener('click', function(event){
+    var districts = document.getElementsByClassName('district');
+    // clear classes from all TRs
+    Array.from(districts).map(function(dist){
+      dist.parentElement.className = '';
+    });
+    var choice = Math.floor(Math.random() * districts.length);
+    var chosen = districts[choice];
+    var parent = chosen.parentElement;
+    parent.className = "highlight";
+  });
+});
