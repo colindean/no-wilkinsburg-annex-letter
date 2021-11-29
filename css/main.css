@@ -382,8 +382,8 @@ nav a:hover {
   display: none;
 }
 
-header h1.title svg {
-  height: 2em;
+header h1.title img {
+  height: 4em;
 }
 
 .footer-container a, aside a {
