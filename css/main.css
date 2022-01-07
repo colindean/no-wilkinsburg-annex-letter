@@ -486,3 +486,8 @@ table.districts td {
 tr.highlight {
     background-color: yellow !important;
 }
+
+td.territory {
+    font-size: small;
+    line-height: 1em;
+}
